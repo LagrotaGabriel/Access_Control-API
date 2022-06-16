@@ -15,7 +15,7 @@ public class ConciergeEntityDataBuilder {
         builder.conciergeEntity.setId(1L);
         builder.conciergeEntity.setName("João da Silva");
         builder.conciergeEntity.setCpf("123.456.789-20");
-        builder.conciergeEntity.setEntranceHall(EntranceHallEntityDataBuilder.builder().build());
+        builder.conciergeEntity.setEntranceHall(null);
 
         return builder;
     }
