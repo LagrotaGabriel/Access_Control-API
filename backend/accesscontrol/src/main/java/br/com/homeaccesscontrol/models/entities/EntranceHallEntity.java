@@ -13,7 +13,7 @@ import java.util.List;
 @EqualsAndHashCode
 @SequenceGenerator(allocationSize = 1, sequenceName = "sq_entrance", name = "entrance")
 @Table(name = "TB_ENTRANCEHALL")
-public class EntranceHall {
+public class EntranceHallEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "entrance")

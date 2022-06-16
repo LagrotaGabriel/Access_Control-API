@@ -19,7 +19,7 @@ public class ResidentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "resident")
     @Column(name = "resident_id", nullable = false, unique = true, insertable = false, updatable = false)
-    private Integer id;
+    private Long id;
 
     @Column(name = "resident_nm", nullable = false, length = 70)
     private String name;
@@ -44,7 +44,7 @@ public class ResidentEntity {
     private ResidentSituationEnum residentSituation;
 
     @ManyToOne
-    @JoinColumn(name = "id_residence")
+    @JoinColumn(name = "residence_id")
     private ResidenceEntity residence;
 
     @OneToOne(cascade = CascadeType.ALL)

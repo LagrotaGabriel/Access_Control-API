@@ -26,7 +26,7 @@ public class ResidentAccessEntity {
 
     @ManyToOne
     @JoinColumn(name = "id_entrance")
-    private EntranceHall entranceHall;
+    private EntranceHallEntity entranceHallEntity;
 
     @ManyToOne
     @JoinColumn(name = "id_resident")

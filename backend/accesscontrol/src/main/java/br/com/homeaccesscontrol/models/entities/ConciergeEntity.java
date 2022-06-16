@@ -26,6 +26,6 @@ public class ConciergeEntity {
     private String cpf;
 
     @OneToOne(mappedBy = "concierge")
-    private EntranceHall entranceHall;
+    private EntranceHallEntity entranceHall;
 
 }
