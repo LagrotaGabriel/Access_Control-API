@@ -24,7 +24,7 @@ public class EntranceHall {
     private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "concierge_id", referencedColumnName = "id")
+    @JoinColumn(name = "concierge_id", referencedColumnName = "concierge_id")
     private ConciergeEntity concierge;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

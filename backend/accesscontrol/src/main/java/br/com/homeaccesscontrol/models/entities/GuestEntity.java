@@ -26,7 +26,8 @@ public class GuestEntity{
     @Column(name = "guest_cpf", unique = true)
     private String cpf;
 
-    @Column(name = "guest_residence", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "id_residence", nullable = false)
     private ResidenceEntity residence;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

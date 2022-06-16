@@ -48,7 +48,7 @@ public class ResidentEntity {
     private ResidenceEntity residence;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "token_id", referencedColumnName = "id")
+    @JoinColumn(name = "token_id", referencedColumnName = "token_id")
     private TokenEntity token;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
