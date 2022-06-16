@@ -16,8 +16,7 @@ public class GuestAccessEntityDataBuilder {
         builder.guestAccessEntity.setId(1L);
         builder.guestAccessEntity.setDate(LocalDateTime.now());
         builder.guestAccessEntity.setGuest(GuestEntityDataBuilder.builder().build());
-        builder.guestAccessEntity.setEntranceHallEntity(EntranceHallEntityDataBuilder
-                .builder().withGuestAccesses().withResidentAccesses().build());
+        builder.guestAccessEntity.setEntranceHallEntity(EntranceHallEntityDataBuilder.builder().build());
 
         return builder;
     }

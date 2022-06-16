@@ -21,7 +21,7 @@ public class EntranceHallEntityDataBuilder {
         builder.entranceHallEntity.setName("North entrance");
         builder.entranceHallEntity.setGuestAccesses(null);
         builder.entranceHallEntity.setResidentAccesses(null);
-        builder.entranceHallEntity.setConcierge(ConciergeEntityDataBuilder.builder().build());
+        builder.entranceHallEntity.setConcierge(null);
 
         return builder;
     }

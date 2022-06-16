@@ -25,8 +25,8 @@ public class ResidentEntityDataBuilder {
         builder.residentEntity.setBirthDate("21/07/1998");
         builder.residentEntity.setRg("11.111.111-3");
         builder.residentEntity.setResidentSituation(ResidentSituationEnum.LIVING);
-        builder.residentEntity.setResidence(ResidenceEntityDataBuilder.builder().withResidents().withGuests().build());
-        builder.residentEntity.setToken(TokenEntityDataBuilder.builder().build());
+        builder.residentEntity.setResidence(ResidenceEntityDataBuilder.builder().build());
+        builder.residentEntity.setToken(null);
         builder.residentEntity.setResidentAccesses(null);
 
         return builder;

@@ -19,7 +19,7 @@ public class GuestEntityDataBuilder {
         builder.guestEntity.setId(1L);
         builder.guestEntity.setName("Steffany Gonçalves");
         builder.guestEntity.setCpf("987.654.321-99");
-        builder.guestEntity.setResidence(ResidenceEntityDataBuilder.builder().withGuests().withResidents().build());
+        builder.guestEntity.setResidence(ResidenceEntityDataBuilder.builder().build());
         builder.guestEntity.setAccesses(null);
 
         return builder;
